@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'custom_switch.dart';
 import 'custom_animated_container.dart';
 
 import 'content.dart';
@@ -17,6 +18,7 @@ class ListViewItem extends StatelessWidget {
         CustomAnimatedContainer(index),
         Content(index),
         CustomSlider(index),
+        CustomSwitch(index),
       ],
     );
   }

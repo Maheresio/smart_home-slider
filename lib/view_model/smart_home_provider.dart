@@ -49,7 +49,7 @@ class SmartHomeProvider with ChangeNotifier {
   }
 
   double calculateWidth(Size deviceSize, int index) {
-    return deviceSize.width * .40 * (sliderValues.elementAt(index) / 100) +
+    return deviceSize.width * .45 * (sliderValues.elementAt(index) / 100) +
         deviceSize.width * .22;
   }
 }

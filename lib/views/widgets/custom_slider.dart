@@ -14,7 +14,7 @@ class CustomSlider extends StatelessWidget {
     return Positioned.fill(
       left: deviceSize.width * .1,
       child: Padding(
-        padding: EdgeInsetsDirectional.only(end: deviceSize.width * .24),
+        padding: EdgeInsetsDirectional.only(end: deviceSize.width * .2),
         child: Opacity(
             opacity: 0,
             child: AbsorbPointer(

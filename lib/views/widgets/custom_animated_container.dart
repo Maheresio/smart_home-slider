@@ -12,13 +12,13 @@ class CustomAnimatedContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     final deviceSize = MediaQuery.of(context).size;
     final homeProvider = Provider.of<SmartHomeProvider>(context);
-    const double rad = 50;
+    const double rad = 40;
 
     return AnimatedContainer(
       width: homeProvider.switchValues.elementAt(index)
           ? homeProvider.calculateWidth(deviceSize, index)
           : deviceSize.width,
-      height: deviceSize.height * .15,
+      height: deviceSize.height * .13,
       decoration: BoxDecoration(
           color: homeProvider.switchValues.elementAt(index)
               ? Colors.white

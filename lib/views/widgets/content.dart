@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -23,7 +21,7 @@ class Content extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              width: deviceSize.width * .1,
+              width: deviceSize.width * .12,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -72,14 +70,7 @@ class Content extends StatelessWidget {
                     )),
               ],
             ),
-            const Spacer(),
-            CupertinoSwitch(
-                dragStartBehavior: DragStartBehavior.down,
-                activeColor: Colors.pinkAccent,
-                value: homeProvider.switchValues.elementAt(index),
-                onChanged: (val) {
-                  homeProvider.setSwitchValue(val, index);
-                }),
+            SizedBox(width: deviceSize.width * .2),
           ],
         ),
       ),
